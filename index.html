@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expression Evaluator</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+</head>
+
+<body>
+    <h1>Expression Evaluator</h1>
+    <p>Enter a mathematical expression and see the result:</p>
+
+    <div class="container">
+        <input type="text" id="expression" value="3+2*5" placeholder="Enter expression">
+        <button onclick="evaluateExpression()">Evaluate</button>
+    </div>
+    <div id="output"></div>
+
+    <div class="container">
+
+        <div class="tree" id="parseTree"">
+        <h1>Parse Tree</h1>
+        </div>
+        <div class=" tree" id="tokensTree">
+        <h1>Tokens</h1>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
